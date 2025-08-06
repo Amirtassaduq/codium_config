@@ -1,0 +1,12 @@
+/home/amir/repos/codium_config/
+
+nano ~/.local/share/applications/backup-codium.desktop
+
+[Desktop Entry]
+Name=Backup VSCodium Config
+Exec=gnome-terminal -- bash -c "/home/amir/repos/codium_config/backup-codium.sh; exec bash"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Utility;
+
