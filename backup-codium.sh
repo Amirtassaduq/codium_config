@@ -6,6 +6,13 @@ VSCODIUM_CONFIG="$HOME/.config/VSCodium/User"
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 REMOTE_URL="https://github.com/Amirtassaduq/codium_config.git"
 
+# === Prompt user for commit message ===
+echo "📝 Enter commit message (leave blank to use default):"
+read -r USER_COMMIT
+
+# Use provided commit message or fallback to timestamped one
+COMMIT_MESSAGE=${USER_COMMIT:-"🧠 Backup VSCodium config: $DATE"}
+
 # Create destination if it doesn't exist
 mkdir -p "$REPO_DIR"
 
@@ -37,7 +44,8 @@ if [ ! -d ".git" ]; then
   git push -u origin main
 fi
 
-# === Regular commit ===
+# === Commit and Push ===
 git add .
-git commit -m "🧠 Backup VSCodium config: $DATE"
+git commit -m "$COMMIT_MESSAGE"
 git push
+
