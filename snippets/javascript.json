@@ -1,0 +1,72 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+	// console.log
+	"Print to console": {
+		"prefix": "cl",
+		"body": [
+			"console.log($1)",
+		],
+		"description": "Log output to console"
+	},
+	// console.log
+	"Print to console with dir": {
+		"prefix": "cd",
+		"body": [
+			"console.dir($1)",
+		],
+		"description": "Log output to console with dir"
+	},
+	// console.log
+	"console trace": {
+		"prefix": "ct",
+		"body": [
+			"console.trace($1)",
+		],
+		"description": "Log output to console with trace"
+	},
+	// console.log
+	"console time": {
+		"prefix": "cp",
+		"body": [
+			"console.time()$1console.timeEnd()",
+		],
+		"description": "Surround code block with console.time"
+	},
+	// JSON.Stringyfy
+	"Print pretty JSON to console": {
+		"prefix": "jlog",
+		"body": [
+			"console.log(JSON.stringify($1, null, 4))",
+			"$2"
+		],
+		"description": "Log JSON string to console"
+	},
+	// add eventlistener
+	"Add Event Listener": {
+		"prefix": "listener",
+		"body": [
+			"$1.addEventListener($2, (e) => {""$3""})"
+		],
+		"description": "Add Event Listener"
+	},
+	// query Selector
+	"Query Selector": {
+		"prefix": "qu",
+		"body": [
+			"${1|const, let|} $2 = document.${3|querySelector, querySelectorAll|}('$4')"
+		],
+		"description": "Query Selector"
+	},
+}

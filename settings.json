@@ -1,0 +1,124 @@
+{
+    // Minimal Visuals & UI Decluttering
+    "workbench.editor.showIcons": false,
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "window.dialogStyle": "custom",
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.guides.indentation": false, // Further minimalism
+    "editor.foldingHighlight": false, // Further minimalism
+    "editor.renderControlCharacters": false, // Further minimalism
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+    "window.titleBarStyle": "custom",
+    "window.customTitleBarVisibility": "never",
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "workbench.statusBar.visible": true, // Keep status bar visible for useful info, but customize its items
+    "workbench.activityBar.location": "hidden", // Uncomment to hide activity bar completely
+    // "workbench.sideBar.hidden": true, // Uncomment to hide sidebar by default (toggle with Ctrl+B)
+    // Zen Mode for Extreme Focus
+    "zenMode.centerLayout": false,
+    "zenMode.showTabs": "none",
+    // Code Editing Experience & Readability
+    "editor.bracketPairColorization.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.hover.delay": 5000, // Very long delay for hovers
+    "editor.hover.hidingDelay": 100, // Hovers disappear quickly
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'D2Coding ligature'",
+    "editor.fontVariations": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.tabSize": 2,
+    "editor.minimap.autohide": true, // No effect if minimap.enabled is false, but good if you re-enable
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line-thin",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "none",
+    "editor.glyphMargin": false,
+    // "editor.lineNumbers": "off",
+    // "editor.folding": false,
+    // "editor.hideCursorInOverviewRuler": true,
+    // 
+    // Performance & Optimization
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "telemetry.telemetryLevel": "off", // Disable telemetry for more privacy and potential minor performance gain
+    "files.watcherExclude": { // Crucial for performance, add your common dev folders
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/bower_components/**": true,
+        "**/.vscode-test/**": true,
+        "**/dist/**": true,
+        "**/build/**": true,
+        "**/out/**": true // Common output folders
+    },
+    "search.exclude": { // Exclude folders from search
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/out": true
+    },
+    "files.exclude": { // Exclude from file explorer
+        "**/.git": true,
+        "**/.vscode": true,
+        "**/*.js.map": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/out": true
+    },
+    // Security & Language Features
+    "security.workspace.trust.untrustedFiles": "open",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Color Customizations (Your existing settings)
+    "workbench.colorCustomizations": {
+        "debugConsole.warningForeground": "#800",
+        "debugConsole.errorForeground": "#d00",
+        "debugConsole.sourceForeground": "#0c0",
+        "debugConsole.infoForeground": "#00f",
+        "editorLineNumber.foreground": "#353535"
+    },
+    // Theme
+    "workbench.colorTheme": "Ayu Dark",
+    // Default Formatters (Your existing settings, ensure you have the extensions)
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": false // Disable for JS but keep it for others
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // Apply formatter settings across profiles (good for consistency)
+    "workbench.settings.applyToAllProfiles": [
+        "editor.defaultFormatter"
+    ],
+    // "javascript.format.enable": true,
+    // "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false
+    // "javascript.format.insertSpaceAfterConstructor": true,
+    // "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    // "typescript.format.insertSpaceAfterConstructor": true,
+    // "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+}
