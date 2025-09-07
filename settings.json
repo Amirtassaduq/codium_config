@@ -18,8 +18,7 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "window.commandCenter": false,
-    "workbench.statusBar.visible": true, // Keep status bar visible for useful info, but customize its items
-    "workbench.activityBar.location": "hidden", // Uncomment to hide activity bar completely
+    "workbench.statusBar.visible": true, // Uncomment to hide activity bar completely
     // "workbench.sideBar.hidden": true, // Uncomment to hide sidebar by default (toggle with Ctrl+B)
     // Zen Mode for Extreme Focus
     "zenMode.centerLayout": false,
@@ -44,6 +43,7 @@
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "none",
     "editor.glyphMargin": false,
+    "explorer.compactFolders": false,
     // "editor.lineNumbers": "off",
     // "editor.folding": false,
     // "editor.hideCursorInOverviewRuler": true,
@@ -113,6 +113,7 @@
     "workbench.settings.applyToAllProfiles": [
         "editor.defaultFormatter"
     ],
+    "workbench.activityBar.location": "hidden",
     // "javascript.format.enable": true,
     // "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
     // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,

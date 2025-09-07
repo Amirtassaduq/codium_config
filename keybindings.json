@@ -80,4 +80,12 @@
     "command": "workbench.action.navigateForward",
     "when": "canNavigateForward"
   },
+  {
+    "key": "alt+s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+shift+] ctrl+]",
+    "command": "editor.action.selectToBracket"
+  },
 ]
