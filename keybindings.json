@@ -88,4 +88,21 @@
     "key": "ctrl+shift+] ctrl+]",
     "command": "editor.action.selectToBracket"
   },
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "alt+a",
+    "command": "-vscode-better-align.align",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.joinLines"
+  },
 ]
