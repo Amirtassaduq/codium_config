@@ -105,4 +105,33 @@
     "key": "alt+j",
     "command": "editor.action.joinLines"
   },
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+delete",
+    "command": "editor.action.deleteLines"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+k l",
+    "command": "cursorLineEnd"
+  },
+  {
+    "key": "ctrl+k h",
+    "command": "cursorLineStart"
+  },
+  {
+    "key": "ctrl+k shift+h",
+    "command": "cursorLineStartSelect"
+  },
+  {
+    "key": "ctrl+k shift+l",
+    "command": "cursorLineEndSelect"
+  }
 ]
